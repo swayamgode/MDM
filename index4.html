@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Webpage with jQuery Effects</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #contentBox {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dynamic Webpage Example</h1>
+
+    <div id="contentBox">
+        This is original content.
+    </div>
+
+    <!-- Buttons -->
+    <button onclick="changeContent()">Change Content</button>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+    <button id="animateBtn">Animate</button>
+
+    <script>
+        // 🔹 JavaScript DOM Manipulation
+        function changeContent() {
+            document.getElementById("contentBox").innerHTML =
+                "Content updated using JavaScript DOM!";
+        }
+
+        // 🔹 jQuery Effects
+        $(document).ready(function () {
+
+            $("#hideBtn").click(function () {
+                $("#contentBox").hide();
+            });
+
+            $("#showBtn").click(function () {
+                $("#contentBox").show();
+            });
+
+            $("#toggleBtn").click(function () {
+                $("#contentBox").toggle();
+            });
+
+            $("#animateBtn").click(function () {
+                $("#contentBox").animate({
+                    width: "400px",
+                    height: "150px",
+                    opacity: 0.5
+                }, 1000);
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
