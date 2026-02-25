@@ -35,9 +35,11 @@
         printeven()
 
         function print1210() {
+            sum = 0
             document.writeln("<h1>3. Print 1-10 using for</h1>")
-            for (i = 1; i <= 10; i++) {
-                document.write(i + "<br>")
+            for (let i = 1; i <= 10; i++) {
+                sum = sum + 1
+                document.write(sum + "<br>")
             }
         }
         print1210()
