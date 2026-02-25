@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
 </head>
@@ -12,12 +13,13 @@
         </p>
         <input type="text" onkeydown="kdown()" />
         <button onclick="project()" onmouseover="over()">
-                    see my work
-                </button>
-                <p id="yo"></p>
+            see my work
+        </button>
+        <p id="yo"></p>
     </div>
     <script>
         function project() {
+            document.getElementById("yo").style.backgroundColor="yellow"
             document.getElementById("yo").innerHTML = "<a href='https://github.com/swayamgode'>Finamte</a> <br><a href='https://github.com/swayamgode'>Portfolio</a>"
         }
 
@@ -30,4 +32,5 @@
         }
     </script>
 </body>
+
 </html>
