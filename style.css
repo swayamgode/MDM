@@ -55,23 +55,22 @@ body {
     background-color: #000000 !important;
 }
 
-.swa:hover {
+.swa:hover{
     color: red;
     cursor: pointer;
 }
-
-.swa:active {
+.swa:active{
     background-color: red;
     color: white;
 }
 
-.un {
+.un{
     color: red;
     font-size: medium;
     padding: 10px;
 }
 
-.con2 {
+.con2{
     border: solid 2px white;
     border-radius: 10px;
 }
